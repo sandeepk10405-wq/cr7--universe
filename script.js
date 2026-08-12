@@ -96,9 +96,6 @@ function scrollToTop() {
   });
 }
 
-/* ============================================
-   NEW FEATURE: TOGGLE INFO PANELS
-   ============================================ */
 function toggleInfo(id) {
   var panel = document.getElementById(id);
   if (panel.style.display === "none" || panel.style.display === "") {
