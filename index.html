@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">⚽ CR7</div>
     <div class="nav-links">
@@ -20,7 +19,6 @@
     </div>
   </nav>
 
-  <!-- Home Section -->
   <div id="home" class="hero">
     <h1>SIUUU! <br> Welcome to <span style="color:#f5c518;">CR7 Universe</span></h1>
     <p>Official fan hub of the greatest footballer in the world.<br>Get everything here - matches, lifestyle, and exclusive fan moments.</p>
@@ -28,7 +26,6 @@
   </div>
 
   <div class="container">
-    <!-- Matches Section -->
     <div id="matches">
       <div class="countdown-container">
         <div class="countdown-box"><span class="countdown-number" id="days">00</span><span class="countdown-label">Days</span></div>
@@ -40,9 +37,10 @@
       <h2 class="section-title">🔥 Upcoming Match</h2>
       <div class="duo-card" style="margin-bottom: 20px;">
         <div class="team-logos">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Al_Nassr_FC_logo.svg/1200px-Al_Nassr_FC_logo.svg.png" alt="Al-Nassr">
+          <!-- ✅ Logos ka link FIX kar diya -->
+          <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Al_Nassr_FC_logo.svg.png" alt="Al-Nassr">
           <span>VS</span>
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Al_Hilal_Saudi_FC_Logo.svg/1200px-Al_Hilal_Saudi_FC_Logo.svg.png" alt="Al-Hilal">
+          <img src="https://upload.wikimedia.org/wikipedia/en/1/15/Al_Hilal_Saudi_FC_Logo.svg.png" alt="Al-Hilal">
         </div>
         <h3>Al-Nassr vs Al-Hilal</h3>
         <p style="color: #aaa; font-size: 14px;">📅 15 August 2026 | 🕗 8:30 PM IST</p>
@@ -94,7 +92,6 @@
       </div>
     </div>
 
-    <!-- Lifestyle Section -->
     <div id="lifestyle" style="margin-top: 50px; padding-top: 20px;">
       <h2 class="section-title">👔 CR7 Lifestyle</h2>
       <div class="duo-card">
@@ -105,7 +102,6 @@
       </div>
     </div>
 
-    <!-- Stats Section -->
     <div id="stats" style="margin-top: 50px; padding-top: 20px;">
       <h2 class="section-title">📊 CR7 Stats</h2>
       <div class="duo-card">
@@ -116,7 +112,6 @@
       </div>
     </div>
 
-    <!-- Fan Zone Section -->
     <div id="fanzone" style="margin-top: 50px; padding-top: 20px;">
       <h2 class="section-title">💛 CR7 Fan Zone</h2>
       <div class="duo-card">
@@ -127,19 +122,19 @@
       </div>
     </div>
 
-    <!-- Fan Ambassadors -->
     <h2 class="section-title">🌟 Fan Ambassadors</h2>
     <div class="fixtures-grid">
       <div class="duo-card">
         <div class="ambassador-img">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/IShowSpeed_at_ESPN_2024.jpg/800px-IShowSpeed_at_ESPN_2024.jpg" alt="iShowSpeed">
-          <h3 style="margin:0; color:#f5c518;">⚡ iShowSpeed</h3>
+          <h3 style="margin:0; color:#f5c518; display:flex; align-items:center;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_Logo_%282013-2017%29.svg.png" style="width:20px; height:15px; margin-right:8px; background:none;"> iShowSpeed
+          </h3>
         </div>
-        <p style="color:#aaa; margin-top: 10px;">The world's #1 Ronaldo superfan. Check out Speed's iconic CR7 reaction in the video below, and click the buttons to see more of his best moments!</p>
+        <p style="color:#aaa; margin-top: 10px;">The world's #1 Ronaldo superfan. Click the button below to watch Speed's iconic CR7 reaction!</p>
         
-        <div class="video-container" style="margin: 15px 0; border-radius: 10px; overflow: hidden;">
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/_wZvq29mPOY" title="iShowSpeed CR7 Reaction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <!-- ✅ Video replaced with button to avoid errors -->
+        <a href="https://www.youtube.com/watch?v=_wZvq29mPOY" target="_blank" class="ambassador-link" style="margin-top: 10px;">▶ Watch Reaction on YouTube</a>
 
         <span class="status-tag" style="background: #2a2a2a; color: #f5c518;">#SpeedXCR7</span>
         <div style="margin-top: 12px;">
@@ -161,7 +156,6 @@
       </div>
     </div>
 
-    <!-- Shoutbox -->
     <h2 class="section-title">💬 CR7 Fan Shoutbox</h2>
     <div class="shoutbox-container">
       <div class="shoutbox-form">
@@ -174,10 +168,7 @@
   </div>
 
   <div class="footer">Made with ❤️ for the CR7 Army | 2026</div>
-
-  <!-- Back to Top Button -->
   <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">⬆ Top</button>
-
   <script src="script.js"></script>
 </body>
 </html>
