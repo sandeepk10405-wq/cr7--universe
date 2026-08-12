@@ -1,5 +1,4 @@
 html { scroll-behavior: smooth; }
-
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
 body { background: #0a0a0a; color: #ffffff; padding: 20px; }
 
@@ -8,16 +7,7 @@ body { background: #0a0a0a; color: #ffffff; padding: 20px; }
 .nav-links a { color: #aaa; text-decoration: none; margin-left: 20px; font-size: 14px; transition: 0.3s; }
 .nav-links a:hover { color: #f5c518; }
 
-/* ✅ Hero Image Fixed with direct link (thumb hata diya) */
-.hero { 
-  text-align: center; 
-  margin-bottom: 40px; 
-  padding: 50px 20px;
-  border-radius: 20px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Cristiano_Ronaldo_2014_%28cropped%29.jpg');
-  background-size: cover;
-  background-position: center;
-}
+.hero { text-align: center; margin-bottom: 40px; padding: 50px 20px; border-radius: 20px; background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Cristiano_Ronaldo_2014_%28cropped%29.jpg'); background-size: cover; background-position: center; }
 .hero h1 { font-size: 40px; margin-bottom: 10px; line-height: 1.2; }
 .hero p { color: #ddd; max-width: 600px; margin: 0 auto; }
 
@@ -28,6 +18,15 @@ body { background: #0a0a0a; color: #ffffff; padding: 20px; }
 .duo-card { background: #1e1e1e; border-radius: 12px; padding: 20px; border: 1px solid #2a2a2a; }
 .duo-card h3 { color: #f5c518; margin-bottom: 5px; }
 .duo-card p { color: #ddd; line-height: 1.5; font-size: 14px; }
+
+.clickable-card { cursor: pointer; transition: all 0.3s ease; }
+.clickable-card:hover { transform: scale(1.02); border-color: #f5c518; }
+
+.info-panel { background: #1e1e1e; border-radius: 12px; padding: 20px; margin-top: 10px; border: 1px solid #f5c518; animation: fadeIn 0.5s ease; }
+.info-panel h3 { margin-top: 0; }
+.info-panel p { color: #ddd; line-height: 1.6; margin-bottom: 12px; }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 
 .past-match { border-left: 4px solid #f5c518; }
 .status-tag { display: inline-block; background: #f5c518; color: #121212; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; margin-top: 8px; }
@@ -65,35 +64,8 @@ body { background: #0a0a0a; color: #ffffff; padding: 20px; }
 
 .footer { text-align: center; color: #666; font-size: 13px; margin-top: 50px; border-top: 1px solid #2a2a2a; padding-top: 20px; }
 
-.scroll-top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #f5c518;
-  color: #121212;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  display: none;
-  box-shadow: 0 4px 12px rgba(245, 197, 24, 0.5);
-  transition: all 0.3s ease;
-  z-index: 9999;
-}
-.scroll-top-btn:hover {
-  background: #ffd700;
-  transform: scale(1.1);
-}
+.scroll-top-btn { position: fixed; bottom: 20px; right: 20px; background: #f5c518; color: #121212; border: none; padding: 12px 18px; border-radius: 50px; font-weight: bold; font-size: 16px; cursor: pointer; display: none; box-shadow: 0 4px 12px rgba(245, 197, 24, 0.5); transition: all 0.3s ease; z-index: 9999; }
+.scroll-top-btn:hover { background: #ffd700; transform: scale(1.1); }
 
-@media (max-width: 480px) { 
-  .hero h1 { font-size: 28px; } 
-  .nav-links a { margin-left: 10px; font-size: 12px; } 
-  .countdown-number { font-size: 18px; } 
-}
-@media (max-width: 600px) { 
-  .shoutbox-form { flex-direction: column; gap: 8px; } 
-  .shoutbox-form input { width: 100%; } 
-  .shoutbox-form button { width: 100%; margin-top: 5px; } 
-}
+@media (max-width: 480px) { .hero h1 { font-size: 28px; } .nav-links a { margin-left: 10px; font-size: 12px; } .countdown-number { font-size: 18px; } }
+@media (max-width: 600px) { .shoutbox-form { flex-direction: column; gap: 8px; } .shoutbox-form input { width: 100%; } .shoutbox-form button { width: 100%; margin-top: 5px; } }
